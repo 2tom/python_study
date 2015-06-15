@@ -24,6 +24,11 @@ kinunoriと2tomさんが飲みながら話をしていて、周りのエンジ�
 
 ## 資料
 
-まずは、dotinstallのPythonコースから初めて行きます。
+まずは、dotinstallのPython入門コースから初めて行きます。
+http://dotinstall.com/lessons/basic_python_v2/26015
 
-Enjoy to Python Programing!
+## 勉強会の進め方
+
+準備中
+
+## Enjoy to Python Programming!
