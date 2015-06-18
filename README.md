@@ -29,6 +29,17 @@ http://dotinstall.com/lessons/basic_python_v2/26015
 
 ## 勉強会の進め方
 
-準備中
+事前準備
+
+- 作業用ディレクトリを作ります
+- cd "作ったディレクトリ"
+- git init
+- git remote add origin https://github.com/2tom/python_study.git
+- mkdir "自分のユーザ名"
+- cd "自分のユーザ名"
+- touch test.md
+- git add .
+- git commit -m "first commit"
+- git push -u origin master
 
 ## Enjoy to Python Programming!
