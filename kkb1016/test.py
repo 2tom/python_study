@@ -1,4 +1,4 @@
-# coding: UTF-8
+# -*- coding: UTF-8 -*-
 # 条件分岐 if
 # 比較演算子 > < >= <= == !=
 # 論理演算子 and or not
@@ -13,3 +13,5 @@ else:
 	print "NG!"
 
 print "OK!" if score > 60 else "NG!!!!!"
+
+print "a"
