@@ -30,8 +30,11 @@ http://dotinstall.com/lessons/basic_python_v2/26015
 ## 勉強会の進め方
 
 事前準備
+- git インストール
 - githubアカウントを作成します。
 - 2tomに連絡してcollaborator登録依頼（なれたら、fork + pull req)
+- git config --global user.name hoge
+- git config --global user.email hoge@gmail.com
 - 作業用ディレクトリを作ります
 - cd "作ったディレクトリ"
 - git init
