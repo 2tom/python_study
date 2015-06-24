@@ -1,4 +1,5 @@
 # coding: UTF-8
+# No.1 Python Study 2015/06/11
 # 変数（データにつけるラベル）
 
 # データ型

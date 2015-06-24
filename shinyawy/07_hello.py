@@ -1,4 +1,5 @@
-#coding: UTF-8
+# coding: UTF-8
+# No.1 Python Study 2015/06/11
 # 数値 <> 文字列
 
 # 文字列 → 数値 int float

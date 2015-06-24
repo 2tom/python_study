@@ -1,5 +1,5 @@
-#coding: UTF-8
-#No.2 Python Study 2015/06/18
+# coding: UTF-8
+# No.2 Python Study 2015/06/18
 # リスト
 sales = [50,100,80,45]
 # sort / reverse

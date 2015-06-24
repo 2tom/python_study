@@ -1,4 +1,5 @@
 # coding: UTF-8
+# No.1 Python Study 2015/06/11
 # 文字列
 # 文字数 len
 # 検索 find
