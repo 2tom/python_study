@@ -43,6 +43,7 @@ $ git config --global --list
 - cd "作ったディレクトリ"
 - git init
 - git remote add origin https://github.com/2tom/python_study.git
+- .git/configファイルの上の設定値をhttps://"ユーザ名@"github.com/2tom/python_study.gitに編集
 - mkdir "自分のユーザ名"
 - cd "自分のユーザ名"
 - touch test.md
