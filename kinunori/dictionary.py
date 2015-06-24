@@ -26,3 +26,7 @@ print sales.values()
 
 # itemのみ表示
 print sales.items() # [('gou', 300), ('taki', 500), ('koba', 150), ('yuki', 400)]
+
+
+
+
