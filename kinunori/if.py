@@ -12,4 +12,4 @@ elif score > 40:
 else:
 	print "NG!"
 
-print "OK!" if score > 60 else "NG!"
+print "OK!" if score > 60 else "NG!" 

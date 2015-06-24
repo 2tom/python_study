@@ -6,12 +6,14 @@
 
 import sys
 
-s = "abcdefghjks"
+s = "abcdefghijk"
 
 print len(s)
-print s.find("s")
+print s.find("k")
 
-print s[2:-1]
+
+
+print s[-2]
 
 # 数値 <> 文字列
 
