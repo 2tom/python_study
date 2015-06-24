@@ -33,17 +33,25 @@ http://dotinstall.com/lessons/basic_python_v2/26015
 - githubアカウントを作成します。
 - 2tomに連絡してcollaborator登録依頼（なれたら、fork + pull req)
 - git インストール
+
+- 作業用ディレクトリを作ります
+- cd "作ったディレクトリ"
+- git clone https://github.com/2tom/python_study.git
+- cd python_study
 - git アカウント設定
 ```
-$ git config --global user.name hoge
-$ git config --global user.email hoge@gmail.com
-$ git config --global --list
+$ git config  user.name hoge
+$ git config  user.email hoge@gmail.com
+$ git config  --list
 ```
+<<<<<<< HEAD
 - 作業用ディレクトリを作ります
 - cd "作ったディレクトリ"
 - git init
 - git remote add origin https://github.com/2tom/python_study.git
 - .git/configファイルの上の設定値をhttps://"ユーザ名@"github.com/2tom/python_study.gitに編集
+=======
+>>>>>>> 7ee351284a37746d92682f329c2dffbb3af29714
 - mkdir "自分のユーザ名"
 - cd "自分のユーザ名"
 - touch test.md

@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding:utf-8
-"""文字列操作をひとととり"""
+"""文字列操作をひとととり
+たぶん日本語はuを付けてunicodeとして取り扱ったほうが無難
+付けないと文字の場所が何バイト目かで取り扱われるっぽい"""
+
 
 if __name__ == "__main__":
     str = "abcdefgABCDEFG";
@@ -23,8 +26,8 @@ if __name__ == "__main__":
     def getlen():
         print "■len()で文字列長さの取得"
         print len(str)  # 14
-        print len(str2) # 10
-        print len(str5) # 30 uを付けずに定義した文字列は3倍になる？
+        print len(str2) # 10 uを付けるとunicodeで文字数を返却する
+        print len(str5) # 30 uを付けずに定義したするとutf-8にエンコードされてバイト数が返却される
 
     #大文字小文字の操作
     def lower_upper():
@@ -275,13 +278,13 @@ if __name__ == "__main__":
         print "->".join(("shibuya","daikanyakama","nakameguro"))  # shibuya->daikanyama->nakameguro
 
     strings_print()    #表示系
-    #getlen()           #len()で文字列長さの取得
-    #lower_upper()      #大文字小文字の操作
-    #strings_shape()    #文字列整形
-    #strings_find()     #文字列検索等
-    #enc_dec()          #エンコードデコード
-    #strings_replace()  #文字列置換系
-    #strings_separate() #文字列分割
-    #strings_format()   #文字列書式(formatの世界)
-    #valid()            #バリデーション
-    #strings_join() #文字列結合
+    getlen()           #len()で文字列長さの取得
+    lower_upper()      #大文字小文字の操作
+    strings_shape()    #文字列整形
+    strings_find()     #文字列検索等
+    enc_dec()          #エンコードデコード
+    strings_replace()  #文字列置換系
+    strings_separate() #文字列分割
+    strings_format()   #文字列書式(formatの世界)
+    valid()            #バリデーション
+    strings_join() #文字列結合
