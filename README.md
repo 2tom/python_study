@@ -44,14 +44,11 @@ $ git config  user.name hoge
 $ git config  user.email hoge@gmail.com
 $ git config  --list
 ```
-<<<<<<< HEAD
 - 作業用ディレクトリを作ります
 - cd "作ったディレクトリ"
 - git init
 - git remote add origin https://github.com/2tom/python_study.git
 - .git/configファイルの上の設定値をhttps://"ユーザ名@"github.com/2tom/python_study.gitに編集
-=======
->>>>>>> 7ee351284a37746d92682f329c2dffbb3af29714
 - mkdir "自分のユーザ名"
 - cd "自分のユーザ名"
 - touch test.md
