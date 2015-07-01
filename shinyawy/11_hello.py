@@ -1,5 +1,5 @@
 # coding: UTF-8
-# No.? Python Study 2015/07/?
+# No.4 Python Study 2015/07/1
 # セット (集合型) - 重複を許さない
 a = set([1, 2, 3, 4])
 print a
