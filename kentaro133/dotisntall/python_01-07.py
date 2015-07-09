@@ -2,7 +2,7 @@
 
 # 標準出力
 print "hello world"
-print 
+print
 
 # 変数
 msg = "hello world"
@@ -10,16 +10,16 @@ print msg
 print ""
 
 # 数値
-print 10 * 5 # 50
-print 10 // 3 # 3
-print 10 % 3 # 1
-print 2 ** 3 # 8
+print 10 * 5  # 50
+print 10 // 3  # 3
+print 10 % 3  # 1
+print 2 ** 3  # 8
 print ""
 
 # 整数と小数
-print 5 + 2.0 # 7.0
+print 5 + 2.0  # 7.0
 print 10 / 3  # 3
-print 10 / 3.0 # 3.33
+print 10 / 3.0  # 3.33
 print ""
 
 # 文字列
@@ -49,4 +49,3 @@ print 5 + float("5")
 age = 10
 print "i am " + str(age) + " years old!"
 print ""
-
