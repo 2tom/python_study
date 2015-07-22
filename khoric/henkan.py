@@ -7,4 +7,4 @@ import sys
 age = sys.argv[1]
 #age = 20
 
-print "I am " + str(age) + " years old"
+print "I am " + age + " years old"

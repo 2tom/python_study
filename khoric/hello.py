@@ -4,6 +4,9 @@
 
 msg = "hello world"
 print msg
+msg1 = "こんにちは！！！！"
+print msg1
+# ここはコメントです
 
 print 10 * 5
 print 10 // 3
