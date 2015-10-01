@@ -1,0 +1,25 @@
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.40. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 30 15:51:22.002159 2015] [mpm_event:notice] [pid 1:tid 140392670332800] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 30 15:51:22.002391 2015] [core:notice] [pid 1:tid 140392670332800] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Sep 30 15:53:57.311366 2015] [mpm_event:notice] [pid 1:tid 140392670332800] AH00491: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.43. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 30 15:54:38.190140 2015] [mpm_event:notice] [pid 1:tid 140257905862528] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 30 15:54:38.190386 2015] [core:notice] [pid 1:tid 140257905862528] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Sep 30 15:56:50.955922 2015] [mpm_event:notice] [pid 1:tid 140257905862528] AH00491: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.46. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 30 15:57:05.977858 2015] [mpm_event:notice] [pid 1:tid 139804048930688] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 30 15:57:05.978631 2015] [core:notice] [pid 1:tid 139804048930688] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 30 18:22:42.589561 2015] [mpm_event:notice] [pid 1:tid 139883735750528] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 30 18:22:42.589932 2015] [core:notice] [pid 1:tid 139883735750528] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Sep 30 18:33:52.143639 2015] [mpm_event:notice] [pid 1:tid 139883735750528] AH00491: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.7. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 30 18:36:37.678013 2015] [mpm_event:notice] [pid 1:tid 140556933494656] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Wed Sep 30 18:36:37.678277 2015] [core:notice] [pid 1:tid 140556933494656] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Sep 30 19:13:52.380343 2015] [mpm_event:notice] [pid 1:tid 140556933494656] AH00491: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Oct 01 02:26:29.515648 2015] [mpm_event:notice] [pid 1:tid 139873928918912] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Thu Oct 01 02:26:29.518983 2015] [core:notice] [pid 1:tid 139873928918912] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.6. Set the 'ServerName' directive globally to suppress this message
+[Thu Oct 01 05:45:09.716656 2015] [mpm_event:notice] [pid 1:tid 140020922677120] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Thu Oct 01 05:45:09.718823 2015] [core:notice] [pid 1:tid 140020922677120] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

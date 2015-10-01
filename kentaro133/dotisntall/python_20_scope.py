@@ -2,8 +2,9 @@
 
 name = "hemi"
 
+
 def hello():
-	name = "cuda"
+    name = "cuda"
 
 print name
 
@@ -11,4 +12,4 @@ print name
 # pass
 
 def hello2():
-	pass
+    pass

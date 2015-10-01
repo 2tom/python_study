@@ -1,0 +1,19 @@
+apache2:
+  build: apache2
+  ports:
+    - "80:80"
+  volumes:
+    - ./apache2/log/apache2:/var/log/apache2
+
+elastic:
+  build: elastic
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+
+kibana:
+  build: kibana
+  ports:
+    - "5601:5601"
+  links:
+    - elastic:elastic

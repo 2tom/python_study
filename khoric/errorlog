@@ -1,0 +1,5 @@
+[Sat May 02 23:22:04 2009] [error] [client ::1] client denied by server configuration: /var/www/html/secret/A
+[Sat May 02 23:22:05 2009] [error] [client ::2] client denied by server configuration: /var/www/html/secret/B
+[Sat May 02 23:22:06 2009] [error] [client ::3] client denied by server configuration: /var/www/html/secret/C
+[Sat May 02 23:22:07 2009] [error] [client ::4] client denied by server configuration: /var/www/html/secret/D
+[Sat May 02 23:22:08 2009] [error] [client ::5] client denied by server configuration: /var/www/html/secret/E
