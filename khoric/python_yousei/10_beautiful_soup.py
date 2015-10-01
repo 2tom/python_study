@@ -6,7 +6,7 @@ import requests
 
 r = requests.get('http://docs.python.jp/2/library/index.html')
 soup = BeautifulSoup(r.content)
-print soup
+#print soup
 
 toctree = soup.find('div', 'toctree-wrapper')
 links = toctree.find_all('a')
