@@ -1,0 +1,6 @@
+fr = open('/var/log/apache2/error.log')
+fw = open('/root/test.csv','w')
+aaa = fr.read()
+fw.write(aaa)
+fr.close()
+fw.close()
