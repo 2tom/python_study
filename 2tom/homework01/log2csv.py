@@ -7,13 +7,14 @@
 import os
 import sys
 import re
+import time
 import argparse
-import elasticsearch
 
 from datetime import datetime
 from elasticsearch import Elasticsearch
 
 # fileの存在確認
+
 def is_file_check(file):
     if not os.access(file, os.F_OK):
         print "ERROR: '%s' does not exist" % (file)
@@ -26,7 +27,7 @@ def is_file_check(file):
         sys.exit(1)
 
 # accessログフォーマット
-def accessParser(file):
+def accessLogParser(file):
     fread = open(file)
     line = fread.readline()
     while line:
@@ -37,26 +38,13 @@ def accessParser(file):
                 print fline[i]
             else:
                 print fline[i] + ',' ,
-
         line = fread.readline()
     fread.close()
 
-def esPost(file, url):
-    try:
-        es = Elasticsearch([url])
-    except:
-        print "ERROR: '%s' does not connect" % (url)
-        sys.exit(1)
-
-    fread = open(file)
-    line = fread.readline()
-    cnt = 0
-
-    while line:
-        fline = map(''.join, re.findall(r'\"(.*?)\"|\[(.*?)\]|(\S+)', line))
-        time = datetime.now()
-        cnt += 1
-        doc = {
+def elasticsearchParser(line):
+    fline =  map(''.join, re.findall(r'\"(.*?)\"|\[(.*?)\]|(\S+)', line))
+    time = datetime.now()
+    document = {
             'ipaddr': fline[0],
             'userID': fline[1],
             'clientID': fline[2],
@@ -68,9 +56,9 @@ def esPost(file, url):
             'userAgent': fline[8],
             'timestamp': time,
           }
-        res = es.index(index="test-index", doc_type='test-type', id=cnt, body=doc)
-        print res
-        line = fread.readline()
+
+    return document
+
 
 # errorログフォーマット
 # T.B.D
@@ -83,10 +71,32 @@ if __name__ == '__main__':
 
     accessLog = args['logfile']
     is_file_check(accessLog)
+
     if args['es_url']:
         esUrl = args['es_url']
-        esPost(accessLog, esUrl)
+        try:
+            es = Elasticsearch([esUrl])
+        except:
+            print "ERROR: '%s' does not connect" % (esUrl)
+            sys.exit(1)
+
+        file = open(accessLog, 'r')
+        st_results = os.stat(accessLog)
+        st_size = st_results[6]
+        file.seek(st_size)
+
+        while 1:
+            where = file.tell()
+            line = file.readline().rstrip()
+            if not line:
+                time.sleep(1)
+                file.seek(where)
+            else:
+                doc = elasticsearchParser(line)
+                res = es.index(index="test-index", doc_type='test-type', body=doc)
+                print res
+
     else:
-        accessParser(accessLog)
+        accessLogParser(accessLog)
 
     sys.exit(0)

@@ -4,6 +4,7 @@ MAINTAINER 2tom <tera1215@gmail.com>
 
 RUN apt-get update && apt-get install -y\
  apache2\
+ apache2-utils\
  && rm -rf /var/lib/apt/lists/*
 
 ENV APACHE_RUN_USER www-data
